@@ -3,31 +3,248 @@
     padding: 0;
 }
 
-header{
-    height: 230px;
-	background: #fff url('/imagens/fundo.png') repeat-x;
+body{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: #fff url('imagens/fundo.png') repeat-x
 }
 
+#container{
+    width: 750px;
+    margin: 0 auto;
+}
+
+/* -------------- TOPO --------------*/
+
 #topo{
-    margin-left: 20%;
-    margin-right: 20%;
-    border: 1px solid red;
     height: 150px;
-    background: url('/imagens/detalhe-topo.png') no-repeat right center;
     padding-top: 25px;
+    background: url('imagens/detalhe-topo.png') no-repeat right top;
+    /*border: 1px solid red;*/
 }
 
 .logo{
     width: 152px;
     height: 66px;
-    background: url('/imagens/logo.png') no-repeat center;
+    background: url('imagens/logo.png') no-repeat center;
+    text-indent: -2000px;
 }
 
-body{
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    /* --------- NAV BAR ----------- */
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-main{
-    width: 800px;
-    border: 1px solid red;
+#topo ul{
+    margin-top: 30px;
+    background: #b10333;
+    float: left;
 }
+
+#topo ul li{
+    float: left;
+}
+
+#topo ul li a{
+    font-size: 0.9em;
+    display: block;
+    padding: 0.5em 1.2em;
+    line-height: 2.1em;
+    text-decoration: none;
+    color: #fff;
+    background: url('imagens/divisor.png') no-repeat left center;
+}
+
+#topo ul .first a{
+    background: none;
+}
+
+#topo ul a:hover{
+    color: #69101d;
+}
+
+body.home #nav a#home,
+body.brasil #nav a#brasil,
+body.internaciona #nav a#internacional,
+body.economia #nav a#economia,
+body.saude #nav a#saude,
+body.ciencia #nav a#ciencia,
+body.fotos #nav a#fotos
+{
+    color: #fff;
+    background: #de003e;
+    cursor: text;
+}
+    /* -------------- FIM NAV BAR --------------*/
+/* -------------- FIM TOPO --------------*/
+
+
+/* -------------- CONTEÚDO --------------*/
+#conteudo{
+    margin-top: 60px;
+}
+
+/* -------------- CABEÇALHO DAS NOTICIAS -------------- */
+h3{
+    text-transform: uppercase;
+    display: inline;
+    font-size: 0.8em;
+    padding: 3px;
+}
+
+.destaque h3{
+    background: #b10333;
+    color: #fff
+}
+
+.entrevista h3{
+    background: #de003e;
+    color: #000;
+}
+/* -------------- FIM CABEÇALHO DAS NOTICIAS -------------- */
+
+/* -------------- LISTA DE NOTÍCIAS -------------- */
+#news-list li{
+    padding: 2px;
+    border-bottom: 1px solid #ccc;
+    height: 65px;
+}
+
+#news-list li a img{
+    float: left;
+    margin: 5px;
+}
+
+#news-list li a{
+    text-decoration: none;
+}
+
+#news-list li a h3{
+    padding: 0;
+    font-size: 0.8em;
+}
+
+#news-list li a p{
+    font-size: 0.7em;
+}
+/* -------------- FIM LISTA DE NOTÍCIAS -------------- */
+
+    /* -------------- CONTEÚDO LATERAL --------------*/
+#lateral{
+    width: 180px;
+    float: left;
+    margin: 0 0 20px -750px;
+}
+
+        /* -------------- CONTEÚDO CAIXA --------------*/
+.caixa{
+    margin: 10px 0;
+    padding: 5px 0 5px 0;
+    background: #f3f3f3 url('imagens/fundo-caixa.png');
+}
+
+h2{
+    font-size: 1em;
+    background: #294c71;
+    color: #fff;
+    padding: 5px;
+}
+
+.text-caixa{
+    background: #fff;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+#lateral ul a{
+    font-size: 0.9em;
+    padding: 3px;
+    display: block;
+    line-height: 30px;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+#lateral ul a:hover{
+    color: #a1a1a1;
+    background: #f9f9f9 url('imagens/marcador.png') no-repeat left center;
+    padding-left: 20px;
+}
+/*-------------- FORM --------------*/
+label{
+    display: block;
+    cursor: pointer;
+}
+
+input{
+    padding: 5px;
+    width: 125px;
+    font-size: 0.9em;
+    background: #fff;
+}
+
+input.submit{
+    width: 80px;
+    color: #fff;
+    background-color: #b10333;
+    border: 2px solid #870529;
+    padding: 5px;
+}
+/*-------------- FIM FORM --------------*/
+    /* -------------- FIM CONTEÚDO CAIXA --------------*/
+    /* -------------- FIM CONTEÚDO LATERAL --------------*/
+
+
+    /* -------------- CONTEÚDO PRIMÁRIO --------------*/
+#primario{
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 195px;
+}
+
+#uma-coluna #primario{
+    width: 750px;
+    margin: 0 0 20px 0;
+}
+
+#duas-colunas #primario{
+    width: 555px;
+}
+    /* -------------- FIM CONTEÚDO PRIMÁRIO --------------*/
+
+
+    /* -------------- CONTEÚDO SECUNDÁRIO --------------*/
+#secundario{
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 15px;
+}
+    /* -------------- FIM CONTEÚDO SECUNDÁRIO --------------*/
+/* -------------- FIM CONTEÚDO --------------*/
+
+/* -------------- IMAGEM --------------*/
+img.main-img{
+    width: 98%;
+    border: 3px solid #dfdfdf;
+}
+/* -------------- FIM IMAGEM --------------*/
+
+
+
+
+
+/* -------------- RODAPÉ --------------*/
+#rodape{
+    background: #294c71;
+    padding: 20px;
+    text-align: center;
+}
+
+#text-rodape{
+    width: 750px;
+    color: #fff;
+    margin: 0 auto;
+}
+/* -------------- FIM RODAPÉ --------------*/
